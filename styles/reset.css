@@ -1,0 +1,19 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,600;1,200;1,400&display=swap');
+
+  :root{
+    --background-color: gray;
+    --blue-color: #4A3AFF;
+    --purple-color: #7749F8;
+    --white-color: #DEE2E6;
+}
+
+body{
+    background-color: var(--background-color);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
