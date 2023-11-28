@@ -3,7 +3,7 @@
   :root{
     --background-color: gray;
     --blue-color: #4A3AFF;
-    --purple-color: #7749F8;
+    --button-color: #7749F8;
     --white-color: #DEE2E6;
 }
 
@@ -16,4 +16,4 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto Condensed', sans-serif;
-}
+ }

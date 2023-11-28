@@ -53,11 +53,11 @@
     transition: 0.5s;
     pointer-events: none;
 }
-
+/*when you select the input box and when the input is valid ex: example@enything.*/
 .input-box input:focus ~ label,
 .input-box input:valid ~ label{
     top: -5px;
-}
+ }
 
 .input-box input{
     width: 100%;
@@ -146,10 +146,7 @@ button:hover{
       width:290px;
     }
   }
-
-
-
-
+                 
 
 
 
