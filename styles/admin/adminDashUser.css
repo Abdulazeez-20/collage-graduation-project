@@ -1,0 +1,46 @@
+
+#hero .edit-search{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.edit-search input{
+    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: var(--gray-color); 
+    border-radius: 1rem;  
+}
+
+.edit-search i{
+    position: relative;
+    right: 3.5rem;
+}
+
+#hero .name-email .list-title, .name-email ul .row {
+    display: flex;
+    align-items: center;
+}
+
+.name-email ul .row {
+    margin-bottom: 1rem;
+}
+
+.name-email hr{
+    margin-top: 0;
+}
+
+.name-email ul .row p.name{
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.name-email ul .row p.email{
+    opacity: 0.5;
+}
+
+
+
+
+ 

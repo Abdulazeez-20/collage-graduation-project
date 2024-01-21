@@ -1,0 +1,235 @@
+/*  text styles*/
+p{
+    padding: 0;
+    margin: 0;
+}
+
+.img-logo{
+    margin: 0 auto;
+    max-width: 80px;
+}
+
+.logo-text p.first{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+.logo-text p.second{
+    color: #7c73df;
+    font-size: 1.6rem;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+.img-profile{
+    border-radius: 50%;
+    max-width: 60px;
+    background-size: cover;
+}
+
+
+.img-search{
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.nav-items .nav-text{
+    font-size: 21px;
+}
+
+.icon{
+    font-size: 1.6rem;
+}
+
+.card .info p{
+    text-transform: capitalize;
+}
+
+/*** sidebar ***/
+
+#sidebar{
+    position: fixed;
+    top: 0; left: 0;
+    overflow: auto;
+    background-color: var(--gray-color);
+    z-index: 1000;
+    transition: 1 ease-in;
+}
+
+.container .logo-text{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    pointer-events: none;
+}
+
+.nav-list .nav-link li{
+    display: flex;
+    align-items: center;
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid white;
+}
+
+.nav-items button {
+    width: 125px;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.nav-list .nav-link li:hover{
+    background-color: #7c73df;
+    color: white;
+}
+
+/***  header ***/
+main header{
+    background-color: var(--header-color);
+    z-index: 999;
+}
+
+header input, .card-search input{
+    max-width: 350px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+header i, .card-search i{
+    position: relative;
+    left: -2rem;
+}
+
+header a{
+    text-transform: capitalize;
+}
+
+/**** modal -- table ****/
+
+.modal-content{
+    padding: 1rem 0.5rem;
+    background: linear-gradient(
+        120deg,
+        #574ade,
+        #59539c,
+        #4f4c6b
+    );
+
+} 
+
+table tr{
+    height: 50px;
+}
+
+table tr:last-child{
+    height: 100px;
+}
+
+table th{
+    pointer-events: none;
+}
+
+/*** pagging ***/
+#pagging{
+    border-radius: 2rem;
+    background-color: #ad9ad0;
+}
+
+.page-list li{
+    border: 1.5px solid transparent;
+    font-size: 1.2rem;
+    color: #131212;
+}
+
+.page-list a{
+    text-decoration: none;
+}
+
+.page-list a:hover li{
+    border-color: #6458ec;
+    color: #6458ec;
+    transition: 0.3s ease-in-out;
+}
+
+#pagging .input-group .btn{
+    font-size: 1.2rem;
+}
+
+#pagging li.is-active{
+    background-color: var(--primary-color);
+    color: white;
+}
+ 
+/**    toggle **/
+
+@media (max-width: 868px){
+    #sidebar{
+        display: none;
+    }
+
+    #toggle{
+        margin-right: 1rem;
+        width: 40px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #toggle::before{
+        position: absolute;
+        content: "";
+        width: 40px;
+        height: 3px;
+        transform: translateY(-6px);
+        background-color: red;
+        transition: 0.5s;
+    }
+    
+    #toggle::after{
+        position: absolute;
+        content: "";
+        width: 40px;
+        height: 3px;
+        transform: translateY(6px);
+        background-color:blueviolet;
+        transition: 0.5s;
+    }
+    
+    #toggle.is-active::before{
+        transform: translate(0)rotate(45deg);
+    }
+    
+    #toggle.is-active::after{
+        transform: translate(0)rotate(-45deg);
+    }
+
+    #sidebar.is-active{
+        display: block;
+    }
+
+    
+}
+
+@media (max-width: 370px) {
+    .nav-items .nav-text{
+        font-size: 1.2rem;
+    }
+
+    .icon{
+        font-size: 1.2rem;
+    }
+    header a{
+        font-size: 12px;
+    }
+    
+}

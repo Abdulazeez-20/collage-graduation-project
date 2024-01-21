@@ -1,0 +1,43 @@
+.form-control{
+    background-color: transparent;
+    border: 1px solid;
+    color: blue;
+    margin-bottom: 0.8rem;
+}
+
+.form-control:focus 
+{
+    background-color: transparent;
+    border: none;
+    color: black;
+}
+
+.form-control:valid {
+    border-color: black;
+}
+
+#hero{
+    span{
+       display: flex;
+       justify-content: space-evenly;
+        a{
+            background-color: rgb(204, 199, 199);
+            font-weight: 600;
+        }
+        a.active{
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+        }
+    }
+
+    .buttons{
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 1rem;
+        
+        button{
+            font-weight: 600;
+        }
+    }
+}

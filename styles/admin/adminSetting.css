@@ -1,0 +1,54 @@
+#pagging{
+    display: none;
+}
+
+
+/** card **/
+input[type="file"]{
+    position: absolute;
+    font-size: 8px;
+    right: 0.4rem ;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.card-body label{
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+.image-select .card{
+    padding: 2rem 0 1rem;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+/**form**/
+
+.label-form{
+    padding: 1rem 0 0.5rem;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form-floating input{
+    margin-bottom: 0.5rem;
+    background-color: transparent;
+    border: 1px solid;
+}
+
+.form-floating label{
+    color: var(--primary-color);
+}
+
+.form-floating input:focus{
+   background-color: transparent;
+   color: var(--primary-color);
+}
+
+form .buttons{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}

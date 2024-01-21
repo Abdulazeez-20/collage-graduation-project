@@ -1,0 +1,22 @@
+
+.form-floating input{
+    background-color: transparent;
+    border: 1px solid;
+}
+
+.form-floating input:focus
+{
+   background-color: transparent;
+   color: var(--primary-color);
+}
+
+
+@media (max-width: 768px){
+    .card .img-card{
+        width: 40px;
+    }
+
+    li{
+        font-size: 1rem
+    }
+}

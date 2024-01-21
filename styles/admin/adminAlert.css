@@ -1,0 +1,54 @@
+
+/** hero -- card **/
+
+#hero .research-card{
+    display: flex;
+    align-items: center;
+    border-radius: 2rem;
+    background: linear-gradient(
+        #c8c1d5,
+        #c5b9dc,
+        #ad9ad0
+    );
+    padding: 0.5rem 0 0.25rem ;
+}
+
+.research-card .research .info .name-date-global{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: var(--background-color);
+}
+
+.research .info .title{
+    font-weight: 600;
+    margin-bottom: 2px;
+    padding-left: 1rem;
+}
+
+.research .info .description{
+    letter-spacing: 1px;
+    white-space: wrap ;
+    padding-left: 1rem;
+}
+
+.research .name-date-global .date{
+    opacity: 0.5;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.name-date-global .name, .name-date-global .global{
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--primary-color);
+
+}
+
+.research-card button{
+    margin: auto;
+    text-transform: uppercase;
+}

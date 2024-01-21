@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="../../styles/common/reset.css" />
+    <link rel="stylesheet" href="../../styles/common/navHeader.css" />
+    <link rel="stylesheet" href="../../styles/common/cardsFilter.css" />
+    <link rel="stylesheet" href="../../styles/common/adminDashUser.css" />
+    <script src="../../js/index.js" defer></script>
+    <title>admin dash user</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <nav id="sidebar" class="col-7 col-sm-4 col-md-3 col-xl-2 vh-100">
+        <div class="container">
+          <div class="logo-text text-center">
+            <img src="../../images/logo.png" class="img-logo" alt="logo" />
+            <span>
+              <p class="first mb-0">Research</p>
+              <p class="second">Mangement</p>
+            </span>
+          </div>
+
+          <div class="nav-items mt-2">
+            <ul class="nav-list p-0">
+              <a href="./adminDash.html" class="nav-link">
+                <li class="mb-3">
+                  <i class="bi bi-grid icon pe-4"></i>
+                  <span class="nav-text">Dashbord</span>
+                </li>
+              </a>
+
+              <a href="./adminAlert.html" class="nav-link">
+                <li class="mb-3">
+                  <i class="bi bi-bell-fill icon pe-4"></i>
+                  <span class="nav-text">Alerts</span>
+                </li>
+              </a>
+
+              <a href="./adminProfile.html" class="nav-link">
+                <li class="mb-3">
+                  <i class="bi bi-person-circle icon pe-4"></i>
+                  <span class="nav-text">Profile</span>
+                </li>
+              </a>
+
+              <a href="./adminSetting.html" class="nav-link">
+                <li class="mb-3">
+                  <i class="bi bi-sliders icon pe-4"></i>
+                  <span class="nav-text">Settings</span>
+                </li>
+              </a>
+
+              <a href="./adminReports.html" class="nav-link">
+                <li class="mb-3">
+                  <i class="bi bi-receipt icon pe-4"></i>
+                  <span class="nav-text">Reports</span>
+                </li>
+              </a>
+            </ul>
+
+            <button class="btn btn-success d-flex">
+              <i class="bi bi-box-arrow-left"></i>
+              <span>LOG OUT</span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <main>
+      <header class="position-fixed top-0">
+        <div class="container-fluid">
+          <div class="row d-flex align-items-center">
+            <div class="col-7 d-flex align-items-center">
+              <div id="toggle"></div>
+              <input type="search" placeholder="Search" class="w-100" />
+              <i class="bi bi-search"></i>
+            </div>
+            <span class="col d-flex align-items-center justify-content-end p-0">
+              <a href="./adminProfile.html" class="text-primary">user name</a>
+              <img
+                src="../../images/smile.jpg"
+                class="img-profile"
+                alt="profile image"
+              />
+            </span>
+          </div>
+        </div>
+      </header>
+
+      <section id="hero" class="container-fluid">
+        <div class="filter pt-3 mb-3">
+          <div class="container">
+            <div
+              class="row row-cols-2 row-cols-md-6 gap-4 d-flex justify-content-center"
+            >
+              <div class="col-4 col-sm">
+                <p>Researchs</p>
+                <a href="#" class="link-filter">
+                  <span class="icon">
+                    <i class="bi bi-bar-chart-line-fill"></i>
+                    <span>0</span>
+                  </span>
+                </a>
+              </div>
+              <div class="col-4 col-sm is-active">
+                <p>Published researchs</p>
+                <a href="./adminDash.html" class="link-filter">
+                  <span class="icon">
+                    <i class="bi bi-bar-chart-line-fill"></i>
+                    <span>0</span>
+                  </span>
+                </a>
+              </div>
+
+              <div class="col-4 col-sm">
+                <p>Registered researchs</p>
+                <a href="./adminDash.html" class="link-filter">
+                  <span class="icon">
+                    <i class="bi bi-clipboard-data-fill"></i>
+                    <span>0</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="edit-search container-fluid row">
+          <h3 class="col-xs-6">Edit Queue</h3>
+          <span class="col-xs-6">
+            <input class="btn-block" type="search" placeholder="search" />
+          </span>
+          <i class="bi bi-search"></i>
+        </div>
+
+        <div class="name-email container-fluid">
+          <div class="row list-title container-fluid">
+            <h4 class="col-xs-4">name&email</h4>
+            <span class="col-xs-2">name</span>
+            <p class="col-xs-3">email</p>
+            <p class="col-xs-2">password</p>
+            <p class="col-xs-1">Delete</p>
+          </div>
+
+          <hr />
+
+          <div class="list-users container-fluid">
+            <ul>
+              <li class="row">
+                <span class="col-xs-4">
+                  <p class="name">Abdulazeez Alrashid</p>
+                  <p class="email">example@gmail.com</p>
+                </span>
+
+                <p class="col-xs-2">name</p>
+                <p class="col-xs-3">example@gmail.com</p>
+                <p class="col-xs-2">password</p>
+                <button class="btn btn-danger col-xs-1">
+                  <i class="bi bi-trash3"></i>
+                </button>
+              </li>
+
+              <li class="row">
+                <span class="col-xs-4">
+                  <p class="name">Abdulazeez Alrashid</p>
+                  <p class="email">example@gmail.com</p>
+                </span>
+
+                <p class="col-xs-2">name</p>
+                <p class="col-xs-3">example@gmail.com</p>
+                <p class="col-xs-2">password</p>
+                <button class="btn btn-danger col-xs-1">
+                  <i class="bi bi-trash3"></i>
+                </button>
+              </li>
+
+              <li class="row">
+                <span class="col-xs-4">
+                  <p class="name">Abdulazeez Alrashid</p>
+                  <p class="email">example@gmail.com</p>
+                </span>
+
+                <p class="col-xs-2">name</p>
+                <p class="col-xs-3">example@gmail.com</p>
+                <p class="col-xs-2">password</p>
+                <button class="btn btn-danger col-xs-1">
+                  <i class="bi bi-trash3"></i>
+                </button>
+              </li>
+
+              <li class="row">
+                <span class="col-xs-4">
+                  <p class="name">Abdulazeez Alrashid</p>
+                  <p class="email">example@gmail.com</p>
+                </span>
+
+                <p class="col-xs-2">name</p>
+                <p class="col-xs-3">example@gmail.com</p>
+                <p class="col-xs-2">password</p>
+                <button class="btn btn-danger col-xs-1">
+                  <i class="bi bi-trash3"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="pagging" class="col col-lg-10 mt-4 m-auto">
+        <div class="container">
+          <div class="row d-flex align-items-center">
+            <p class="col text-center" style="color: var(--primary-color)">
+              1|99
+            </p>
+
+            <ul
+              class="page-list col-6 col-md-8 col-lg-7 d-flex justify-content-evenly m-0"
+            >
+              <a href="#">
+                <li class="p-0 ps-sm-3 pe-sm-3">1</li>
+              </a>
+
+              <a href="#">
+                <li class="p-0 ps-sm-3 pe-sm-3">2</li>
+              </a>
+              <a href="#">
+                <li class="p-0 ps-sm-3 pe-sm-3">3</li>
+              </a>
+              <a href="#">
+                <li class="p-0 ps-sm-3 pe-sm-3 is-active">4</li>
+                <!-- active the page -->
+              </a>
+              <a href="#">
+                <li class="p-0 ps-sm-3 pe-sm-3">5</li>
+              </a>
+              <a href="#">
+                <li class="p-0 ps-sm-3 pe-sm-3">6</li>
+              </a>
+              <a href="#">
+                <li class="p-0 ps-sm-3 pe-sm-3">7</li>
+              </a>
+            </ul>
+
+            <div class="col offset-sm-1 offset-md-0 offset-lg-1 input-group">
+              <button class="btn btn-primary p-0 p-sm-1 p-md-2">
+                <i class="bi bi-arrow-left"></i>
+              </button>
+              <button class="btn btn-primary p-0 p-sm-1 p-md-2">
+                <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      window.addEventListener("DOMContentLoaded", (event) => {
+        // Function to set the margin of the main content based on the sidebar width
+        const setMainContentMargin = () => {
+          // Get the width of the sidebar and Heigth of header
+          const sidebarWidth = document.querySelector("#sidebar").offsetWidth;
+          const headerHieht = document.querySelector("header").offsetHeight;
+
+          // Set the margin-left of the main content because sidebar id fixed
+          document.querySelector("main").style.marginLeft = `${sidebarWidth}px`;
+
+          // set the hero under the header
+          document.querySelector("#hero").style.marginTop = `${headerHieht}px`;
+
+          // set the width of header and footer because there posintion is fixed
+          document.querySelector(
+            "header"
+          ).style.width = `calc(100% - ${sidebarWidth}px)`;
+        };
+
+        setMainContentMargin();
+
+        // Recalculate and set the margin when the window is resized
+        window.addEventListener("resize", setMainContentMargin);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="../../styles/reset.css" />
+    <link rel="stylesheet" href="../../styles/navHeader.css" />
+    <link rel="stylesheet" href="../../styles/adminProfile.css" />
+    <script src="../../js/index.js" defer></script>
+    <title>user profile</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <nav id="sidebar" class="col-7 col-sm-4 col-md-3 col-xl-2 vh-100">
+        <div class="container">
+          <div class="logo-text text-center">
+            <img src="../../images/logo.png" class="img-logo" alt="logo" />
+            <span>
+              <p class="first mb-0">Research</p>
+              <p class="second">Mangement</p>
+            </span>
+          </div>
+
+          <div class="nav-items mt-2">
+            <ul class="nav-list p-0">
+              <a href="./userDash.html" class="nav-link">
+                <li class="mb-3">
+                  <i class="bi bi-grid icon pe-4"></i>
+                  <span class="nav-text">Dashbord</span>
+                </li>
+              </a>
+
+              <a href="./userAddRe.html" class="nav-link">
+                <li class="mb-3">
+                  <i class="bi bi-plus-circle pe-4 icon"></i>
+                  <span class="nav-text">Researchs</span>
+                </li>
+              </a>
+
+              <a href="./userProfile.html" class="nav-link">
+                <li class="mb-3">
+                  <i class="bi bi-person-circle icon pe-4"></i>
+                  <span class="nav-text">Profile</span>
+                </li>
+              </a>
+
+              <a href="./userSetting.html" class="nav-link">
+                <li class="mb-3">
+                  <i class="bi bi-sliders icon pe-4"></i>
+                  <span class="nav-text">Settings</span>
+                </li>
+              </a>
+            </ul>
+
+            <button class="btn btn-success d-flex">
+              <i class="bi bi-box-arrow-left"></i>
+              <span>LOG OUT</span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <main>
+      <header class="position-fixed top-0">
+        <div class="container-fluid">
+          <div class="row d-flex align-items-center">
+            <div class="col-7 d-flex align-items-center">
+              <div id="toggle"></div>
+              <input type="search" placeholder="Search" class="w-100" />
+              <i class="bi bi-search"></i>
+            </div>
+            <span class="col d-flex align-items-center justify-content-end p-0">
+              <a href="#" class="text-primary">user name</a>
+              <img
+                src="../../images/smile.jpg"
+                class="img-profile"
+                alt="profile image"
+              />
+            </span>
+          </div>
+        </div>
+      </header>
+
+      <section id="hero">
+        <div class="container pt-1">
+          <div class="row">
+            <div class="col-3">
+              <div class="card">
+                <button class="btn align-self-end pb-1">
+                  <i class="bi bi-gear"></i>
+                </button>
+
+                <div class="card-body">
+                  <img src="../../images/smile.jpg" alt="profile image" />
+                  <span class="text-center">
+                    <p class="name">user name</p>
+                    <p class="name opacity-50">work title</p>
+                  </span>
+                </div>
+
+                <div class="card-footer pb-0">
+                  <label for="range">Press Heat: 68%</label>
+                  <input type="range" id="range" class="form-range" />
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <img
+                src="../../images/bg.webp"
+                alt="background image"
+                class="img-bg"
+              />
+              <span class="i">
+                <i class="bi bi-camera"></i>
+                <input type="file" />
+              </span>
+            </div>
+          </div>
+
+          <div class="row gap-4 mx-md-3 mt-3">
+            <div class="col-12 col-md-6 view-research">
+              <span
+                class="d-flex align-items-center justify-content-between px-2"
+              >
+                <p>Published researchs</p>
+                <span class="text-primary">(544) All</span>
+              </span>
+
+              <div>
+                <span>
+                  <img
+                    src="../../images/smile3.jpg"
+                    alt="profile image"
+                    class="img-strech"
+                  />
+                  <span class="name ps-4">research name</span>
+                </span>
+
+                <button class="btn btn-primary">Full Review</button>
+              </div>
+
+              <div>
+                <span>
+                  <img
+                    src="../../images/smile3.jpg"
+                    alt="profile image"
+                    class="img-strech"
+                  />
+                  <span class="name ps-4">research name</span>
+                </span>
+
+                <button class="btn btn-primary">Full Review</button>
+              </div>
+
+              <div>
+                <span>
+                  <img
+                    src="../../images/smile3.jpg"
+                    alt="profile image"
+                    class="img-strech"
+                  />
+                  <span class="name ps-4">research name</span>
+                </span>
+
+                <button class="btn btn-primary">Full Review</button>
+              </div>
+
+              <div>
+                <span>
+                  <img
+                    src="../../images/smile3.jpg"
+                    alt="profile image"
+                    class="img-strech"
+                  />
+                  <span class="name ps-4">research name</span>
+                </span>
+
+                <button class="btn btn-primary">Full Review</button>
+              </div>
+            </div>
+
+            <div class="col view-research">
+              <span
+                class="d-flex align-items-center justify-content-between px-2"
+              >
+                <p>Registered researchs</p>
+                <span class="text-primary">(544) All</span>
+              </span>
+
+              <div>
+                <span>
+                  <img
+                    src="../../images/smile3.jpg"
+                    alt="profile image"
+                    class="img-strech"
+                  />
+                  <span class="name ps-4">research name</span>
+                </span>
+
+                <button class="btn btn-primary">Full Review</button>
+              </div>
+
+              <div>
+                <span>
+                  <img
+                    src="../../images/smile3.jpg"
+                    alt="profile image"
+                    class="img-strech"
+                  />
+                  <span class="name ps-4">research name</span>
+                </span>
+
+                <button class="btn btn-primary">Full Review</button>
+              </div>
+
+              <div>
+                <span>
+                  <img
+                    src="../../images/smile3.jpg"
+                    alt="profile image"
+                    class="img-strech"
+                  />
+                  <span class="name ps-4">research name</span>
+                </span>
+
+                <button class="btn btn-primary">Full Review</button>
+              </div>
+
+              <div>
+                <span>
+                  <img
+                    src="../../images/smile3.jpg"
+                    alt="profile image"
+                    class="img-strech"
+                  />
+                  <span class="name ps-4">research name</span>
+                </span>
+
+                <button class="btn btn-primary">Full Review</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      window.addEventListener("DOMContentLoaded", (event) => {
+        // Function to set the margin of the main content based on the sidebar width
+        const setMainContentMargin = () => {
+          // Get the width of the sidebar and Heigth of header
+          const sidebarWidth = document.querySelector("#sidebar").offsetWidth;
+          const headerHieht = document.querySelector("header").offsetHeight;
+
+          // Set the margin-left of the main content because sidebar id fixed
+          document.querySelector("main").style.marginLeft = `${sidebarWidth}px`;
+
+          // set the hero under the header
+          document.querySelector("#hero").style.marginTop = `${headerHieht}px`;
+
+          // set the width of header and footer because there posintion is fixed
+          document.querySelector(
+            "header"
+          ).style.width = `calc(100% - ${sidebarWidth}px)`;
+        };
+
+        setMainContentMargin();
+
+        // Recalculate and set the margin when the window is resized
+        window.addEventListener("resize", setMainContentMargin);
+      });
+    </script>
+  </body>
+</html>
